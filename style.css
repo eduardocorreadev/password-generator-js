@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #282a36;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.container form input,
+.container form select {
+    width: 350px;
+    height: 45px;
+    background: #282a36;
+    border: 1px solid #44475a;
+    margin-bottom: 20px;
+    text-align: center;
+    cursor: pointer;
+    color: #fff;
+    padding: 0 10px;
+}
+
+
+.container form button {
+    width: 350px;
+    height: 45px;
+    color: #fff;
+    background: #3d6cf8;
+    cursor: pointer;
+    border: none;
+    margin-bottom: 10px;
+}
+
+.container form .show-area {
+    display: flex;
+}
+
+.container form .show-area button {
+    position: absolute;
+    width: 50px;
+    height: 45px;
+    border: none;
+    -webkit-animation: slide-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    display: none;
+}
+
+@-webkit-keyframes slide-right {
+  0% {
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes slide-right {
+  0% {
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+
+.container form span {
+    width: 90%;
+    color: #ff4242;
+}

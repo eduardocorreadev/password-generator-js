@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title -->
+    <title>Gerador de Senha</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Link to import icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <!-- Container -->
+    <div class="container">
+        <form>
+            <div class="show-area">
+                <input type="text" name="password" id="show" onclick="copyPassword()"
+                    placeholder="Senha será exibida aqui">
+                <button type="button" onclick="copyPassword(password)" id="button-copy">
+                    <i class="fas fa-copy"></i>
+                </button>
+            </div>
+
+            <select id="size-password">
+                <option value="0" selected disabled>Selecionar tamanho</option>
+                <option value="6">6 Caractres</option>
+                <option value="12">12 Caractres</option>
+                <option value="16">16 Caractres</option>
+                <option value="22">22 Caractres</option>
+                <option value="32">32 Caractres</option>
+            </select>
+
+            <button id="gerar-senha">Gerar Senha</button>
+
+            <span id="error-area"></span>
+        </form>
+    </div>
+    <!-- End Container -->
+    <script src="main.js"></script>
+</body>
+
+</html>
